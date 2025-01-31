@@ -2,7 +2,7 @@ import re
 from typing import Tuple, List, Dict, Optional
 from groq import Groq
 import streamlit as st
-from .database import get_all_tables, get_table_schema, get_database_connection
+from .database import get_all_tables, get_table_schema, get_database_connection, get_database_name
 
 def get_db_schema_context() -> str:
     """Generate database schema context for the LLM"""
